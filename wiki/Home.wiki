@@ -8,8 +8,4 @@ For updates to CommentPress, see the [http://commentpress.cc CommentPress] proje
 ===Twitter===
 #jiscpress
 #jiscri
-
-@josswinn
-@psychemedia
-@commentpress
-@alexbilbie
+@jiscpress
