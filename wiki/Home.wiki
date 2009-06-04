@@ -1,13 +1,15 @@
-#summary One-sentence summary of this page.
+#summary The JISCPress wiki
 
-= Introduction =
+==Introduction==
+We'll be using this to write documentation for the project. Go to the [http://jiscpress.blogs.lincoln.ac.uk blog] for project updates. Join the [http://groups.google.com/group/jiscpress mailing list] to get involved.
 
-Add your content here.
+For updates to CommentPress, see the [http://commentpress.cc CommentPress] project website, join the CommentPress [http://groups.google.com/group/commentpress mailing list] and [http://code.google.com/p/commentpress/ check out the code].
 
+===Twitter===
+#jiscpress
+#jiscri
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+@josswinn
+@psychemedia
+@commentpress
+@alexbilbie
