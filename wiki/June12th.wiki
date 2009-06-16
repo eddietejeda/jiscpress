@@ -1,6 +1,5 @@
 #labels Meeting
 <pre>
-(9:08:10 PM) eddieat [n=eddie@adsl-76-195-10-110.dsl.snfc21.sbcglobal.net] entered the room.
 (9:08:22 PM) eddieat: hello sir
 (9:08:29 PM) josswinn: hiya
 (9:08:39 PM) eddieat: irc. it's a world.
