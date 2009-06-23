@@ -44,4 +44,4 @@ Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documenta
 
 ===Tips===
 
-*The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
+ * The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
