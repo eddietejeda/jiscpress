@@ -8,3 +8,40 @@ Add your content here.
 == AWS ==
 
 [AWSCosts]
+
+An overview of Amazon Web Services can be found on the [http://www.ukoln.ac.uk/repositories/digirep/index/Fedorazon_How_to_Guides Fedorazon wiki]
+
+===Third Party Management Tools===
+
+Although I describe how to set up AWS EC2 and S3 using the AWS documentation, a number of third-party management tools exist to do this via a web browser. i.e. [http://rightscale.com RightScale]
+
+=== EC2 ===
+
+Amazon's [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/index.html documentation] on getting started is clear and useful. There are many different Amazon Machine Images (AMIs) available, but Amazon only officially provide Fedora 8 for Linux. 
+
+Next, in addition to using the AWS Management Console, you should also set up and learn how to use the [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/ commandline tools].
+
+If you use OS X to work on AWS, you need to get your paths right. The Amazon documentation does not account for OS X. There's a good explanation on [http://www.robertsosinski.com/2008/01/26/starting-amazon-ec2-with-mac-os-x this blog].
+
+I added this to my .bash_profile
+
+{{{
+export EC2_HOME=~/.ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
+export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
+export EC2_URL=https://eu-west-1.ec2.amazonaws.com
+}}}
+
+You can either choose to do everything via the commandline or use the Management Console for some tasks and the commandline for others.
+
+=== S3 ===
+
+Once you've got the default Fedora AMI up and running and have access to the commandline tools, you need to bundle the AMI into your own machine and offload it to the S3 storage service.
+
+Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documentation]. This documentation assumes you have a working knowledge of a scripting or programming language and can work directly with the S3 API.  An alternative method of creating and managing S3 buckets would be to use a third-party management console or a [https://addons.mozilla.org/en-US/firefox/search?q=s3&cat=all Firefox plugin].
+
+===Tips===
+
+* The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
