@@ -47,6 +47,10 @@ This is simply a way to add a disk to your AMI. There is good [http://docs.amazo
 
 The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing data. You can snapshot EBS to create backups. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS.
 
+==Elastic IP addresses===
+
+This provides a permanent, static IP address that you 'own'. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/concepts-elastic-addressing.html documentation] on what an elastic IP address is and how to use one. They are free as long as they are in use. They are useful because you can assign any of your AMIs to the IP address and use the address in your DNS records. For example, you might have two AMIs that you want to hot swap to a given domain name without having to change the DNS record for the domain name.
+
 ===Tips===
 
  * The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
