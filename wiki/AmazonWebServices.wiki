@@ -61,7 +61,7 @@ This provides a permanent, static IP address that you 'own'. There is good [http
 
  * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
 
-* Your AMI will be assigned a dynamic, alpha-numeric hostname. This means that you can't create your own reverse DNS record for your mail server and consequently a lot of mail from your server will be marked as spam. For our project purposes, we can probably live with this, but for a full-time production service, mail would need to be relayed by an external service. It's worth [http://developer.amazonwebservices.com/connect/search.jspa?searchKB=true&searchForums=true&searchQuery=&threadID=&q=ptr+OR+%22reverse+dns%22&objID=f30&dateRange=last30days&userID=&numResults=15&rankBy=10001 checking the AWS forums] to see if this situation has changed.
+ * Your AMI will be assigned a dynamic, alpha-numeric hostname. This means that you can't create your own reverse DNS record for your mail server and consequently a lot of mail from your server will be marked as spam. For our project purposes, we can probably live with this, but for a full-time production service, mail would need to be relayed by an external service. It's worth [http://developer.amazonwebservices.com/connect/search.jspa?searchKB=true&searchForums=true&searchQuery=&threadID=&q=ptr+OR+%22reverse+dns%22&objID=f30&dateRange=last30days&userID=&numResults=15&rankBy=10001 checking the AWS forums] to see if this situation has changed.
 
 ===Sharing AMIs===
 
