@@ -45,7 +45,7 @@ Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documenta
 
 This is simply a way to add a disk to your AMI. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-ebs.html documentation] on setting EBS up and using it.
 
-The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing data. You can snapshot EBS to create backups. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS. Typically, I am rsyncing data from the /var /etc /root and /home directories on the AMI to EBS and making daily snapshots.
+The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing important data. EBS provides persistent storage beyond the lifetime of any AMI it has been attached to. You should treat it like a disk and unmount it before detaching it from an AMI. You can snapshot EBS to create backups of the data, too. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS. Typically, I am rsyncing data from the /var /etc /root and /home directories on the AMI to EBS and making daily snapshots.
 
 ==Elastic IP addresses===
 
