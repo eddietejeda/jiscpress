@@ -53,8 +53,8 @@ The reasons for using EBS is to safeguard against anything happening to your AMI
 
  * Once you've got the AMI registered and you can login using ssh, you need to set up the server for handling web and mail traffic.  I find that the articles on slicehost.com are excellent ste-by-step guides for different Linux distros and, even if you've done this several times before, provide a useful checklist of things to do and security measures to take.
 
- * Note that terminating your AMI really does 'destroy' any changes you've made to the machine since it was last started. OS upgrades and changes to config files will all be lost if you terminate your AMI. You can however reboot your machine without terminating it and you will not lose data.
+ * Once I had a private AMI, I then proceed to update it to Fedora 11. Note that the kernel does not get updated. Amazon provide kernels that are tested to work on their service.
 
-* Once I had a private AMI, I then proceed to update it to Fedora 11. Note that the kernel does not get updated. Amazon provide kernels that are tested to work on their service.
+ * Note that terminating your AMI really does 'destroy' any changes you've made to the machine since it was last started. OS upgrades and changes to config files will all be lost if you terminate your AMI. You can however reboot your machine without terminating it and you will not lose data.
 
  * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
