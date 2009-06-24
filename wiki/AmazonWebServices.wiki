@@ -5,13 +5,17 @@
 
 An overview of Amazon Web Services can be found on the [http://www.ukoln.ac.uk/repositories/digirep/index/Fedorazon_How_to_Guides Fedorazon wiki]
 
+Even if you're used to working on virtual servers, you still need to get your head around the different parts of Amazon Web Services. It does not operate quite like a simple VPS.
+
+[http://docs.amazonwebservices.com/AWSEC2/2009-04-04/UserGuide/ Elastic Compute Cloud User Guide]. You really should read this to understand how things work both conceptually and in practice. It will save you time!
+
 ===Third Party Management Tools===
 
-Although I describe how to set up AWS EC2 and S3 using the AWS documentation, a number of third-party management tools exist to do this via a web browser. i.e. [http://rightscale.com RightScale]
+Although I briefly describe how to set up AWS EC2 and S3 using the AWS documentation, a number of free and commercial third-party management tools exist to do this via a web browser. i.e. [http://rightscale.com RightScale]
 
 === EC2 ===
 
-Amazon's [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/index.html documentation] on getting started is clear and useful. There are many different Amazon Machine Images (AMIs) available, but Amazon only officially provide Fedora 8 for Linux. 
+Amazon's [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/index.html documentation] on getting started is clear and useful. There are many different Amazon Machine Images (AMIs) available, but Amazon only officially provide Fedora 8 for Linux. Canonical provide images of Ubuntu
 
 Next, in addition to using the AWS Management Console, you should also set up and learn how to use the [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/ commandline tools].
 
@@ -32,14 +36,25 @@ You can either choose to do everything via the commandline or use the Management
 
 === S3 ===
 
-Once you've got the default Fedora AMI up and running and have access to the commandline tools, you need to bundle the AMI into your own machine and offload it to the S3 storage service.
+Once you've got an AMI up and running and have access to the commandline tools, you should prepare your server and then 'bundle' the AMI as your own private machine and offload it to the S3 storage service.
 
 Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documentation]. This documentation assumes you have a working knowledge of a scripting or programming language and can work directly with the S3 API.  An alternative method of creating and managing S3 buckets would be to use a third-party management console or a [https://addons.mozilla.org/en-US/firefox/search?q=s3&cat=all Firefox plugin].
+
+
+=== Elastic Block Storage ===
+
+This is simply a way to add a disk to your AMI. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-ebs.html documentation] on setting EBS up and using it.
+
+The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing data. You can snapshot EBS to create backups. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS.
 
 ===Tips===
 
  * The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
 
  * Once you've got the AMI registered and you can login using ssh, you need to set up the server for handling web and mail traffic.  I find that the articles on slicehost.com are excellent ste-by-step guides for different Linux distros and, even if you've done this several times before, provide a useful checklist of things to do and security measures to take.
+
+ * Note that terminating your AMI really does 'destroy' any changes you've made to the machine since it was last started. OS upgrades and changes to config files will all be lost if you terminate your AMI. You can however reboot your machine without terminating it and you will not lose data.
+
+* Once I had a private AMI, I then proceed to update it to Fedora 11. Note that the kernel does not get updated. Amazon provide kernels that are tested to work on their service.
 
  * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
