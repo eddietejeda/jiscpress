@@ -45,3 +45,7 @@ Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documenta
 ===Tips===
 
  * The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
+
+ * Once you've got the AMI registered and you can login using ssh, you need to set up the server for handling web and mail traffic.  I find that the articles on slicehost.com are excellent ste-by-step guides for different Linux distros and, even if you've done this several times before, provide a useful checklist of things to do and security measures to take.
+
+ * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
