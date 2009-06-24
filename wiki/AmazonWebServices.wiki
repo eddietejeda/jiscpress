@@ -45,7 +45,7 @@ Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documenta
 
 This is simply a way to add a disk to your AMI. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-ebs.html documentation] on setting EBS up and using it.
 
-The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing data. You can snapshot EBS to create backups. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS.
+The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing data. You can snapshot EBS to create backups. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS. Typically, I am rsyncing data from the /var /etc /root and /home directories on the AMI to EBS and making daily snapshots.
 
 ==Elastic IP addresses===
 
@@ -60,3 +60,5 @@ This provides a permanent, static IP address that you 'own'. There is good [http
  * You should be aware that terminating your private AMI really does 'destroy' any changes you've made to the machine since it was last started. OS upgrades and changes to config files will all be lost if you terminate your AMI. You can however reboot your machine without terminating it and you will not lose data.
 
  * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
+
+* Your AMI will be assigned a dynamic, alpha-numeric hostname. This means that you can't create your own reverse DNS record for your mail server and consequently a lot of mail from your server will be marked as spam. For our project purposes, we can probably live with this, but for a full-time production service, mail would need to be relayed by an external service. It's worth [http://developer.amazonwebservices.com/connect/search.jspa?searchKB=true&searchForums=true&searchQuery=&threadID=&q=ptr+OR+%22reverse+dns%22&objID=f30&dateRange=last30days&userID=&numResults=15&rankBy=10001 checking the AWS forums] to see if this situation has changed.
