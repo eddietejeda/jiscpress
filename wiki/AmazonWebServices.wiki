@@ -14,6 +14,7 @@ The [http://aws.amazon.com/documentation documentation] is good and the [http://
  * If you are interested in working with the S3 API directly, there's a [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ guide to getting started].
  * There's a series of [http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100 Articles & Tutorials] that you can dip into. For example, the tutorial on [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1663&categoryID=100 running MySQL with EBS] was very useful.
  * The [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100 EC2 FAQ] is very useful. Note the second question: [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100#02 What happens to my data when my instance terminates?] and [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100#10 Can I have a static IP address?]  There are other entries relating to DNS that are worth noting, too. 
+ * IBM Developer Works also have some [http://www.ibm.com/developerworks/views/architecture/libraryview.jsp?search_by=Cloud+computing+with+Amazon+Web+Services decent introductory tutorials] on using AWS.
 
 ===An Overview===
 
