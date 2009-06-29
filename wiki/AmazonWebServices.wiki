@@ -3,21 +3,43 @@
 
 [AWSCosts]
 
-An overview of Amazon Web Services can be found on the [http://www.ukoln.ac.uk/repositories/digirep/index/Fedorazon_How_to_Guides Fedorazon wiki]
+Things work differently on Amazon Web Services. Even if you're used to working on virtual servers, you still need to understand the different pieces of Amazon Web Services. Despite offering virtual computing, it does not operate like a Virtual Private Server (VPS) hosting service. This page offers an overview to the features of AWS that the JISCPress project uses. 
 
-Even if you're used to working on virtual servers, you still need to get your head around the different parts of Amazon Web Services. It does not operate quite like a simple VPS.
+===Essential Reading===
 
-[http://docs.amazonwebservices.com/AWSEC2/2009-04-04/UserGuide/ Elastic Compute Cloud User Guide]. You really should read this to understand how things work both conceptually and in practice. It will save you time!
+The [http://aws.amazon.com/documentation documentation] is good and the [http://developer.amazonwebservices.com/connect/forumindex.jspa forums] are lively. Get stuck in.
+
+ * The two main Services we use are [http://aws.amazon.com/ec2/ EC2] and [http://aws.amazon.com/s3/ Simple Storage Service S3]. Read those product pages first as a way in to the world of AWS. In addition, we use the [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1667 Elastic Block Store (EBS)] and an [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/concepts-elastic-addressing.htm Elastic IP address].
+ * You really should read the [http://docs.amazonwebservices.com/AWSEC2/2009-04-04/UserGuide/ Elastic Compute Cloud User Guide] to understand how things work both conceptually and in practice. It will save you time!
+ * If you are interested in working with the S3 API directly, there's a [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ guide to getting started].
+ * There's a series of [http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100 Articles & Tutorials] that you can dip into. For example, the tutorial on [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1663&categoryID=100 running MySQL with EBS] was very useful.
+ * The [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100 EC2 FAQ] is very useful. Note the second question: [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100#02 What happens to my data when my instance terminates?] and [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1145&categoryID=100#10 Can I have a static IP address?]  There are other entries relating to DNS that are worth noting, too. 
+
+===An Overview===
+
+<img src="http://www.ukoln.ac.uk/repositories/digirep/images/c/c1/RepositoryStack-AWS.jpg" alt="AWS for Dummies" title="AWS for Dummies" />
+
+[http://www.ukoln.ac.uk/repositories/digirep/index/Fedorazon_How_to_Guides Image Credit]. 
+
+The image above is a useful one to keep in mind.  We use EC2, EBS and S3 (+ an Elastic IP address). EC2 is the bare server providing CPU cycles. It comes with 160GB of storage but should you terminate the server (i.e. to save on costs or if there's an outage), you will lose all data on that server that has been created since you set it up ('bundled it'). 
+
+Therefore, we use EBS, which acts as persistent attached disk space, to store important files such as the MySQL database and config files, apache config files, logs and the JISCPress WordPress MU installation. Note that we are not using EBS as redundant storage, but using it to extend the filesystem itself in the way [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1663&categoryID=100 described here]. 
+
+We use S3 to store snapshot backups of EBS and to hold the bundled private AMI. S3 storage is highly secure and replicated around data centres wordwide. 
+
+We then use an Elastic IP address to provide a static IP address that can be used in our DNS records and associated with whatever AMI we have running in a matter of seconds.  
 
 ===Third Party Management Tools===
 
-Although I briefly describe how to set up AWS EC2 and S3 using the AWS documentation, a number of free and commercial third-party management tools exist to do this via a web browser. i.e. [http://rightscale.com RightScale]
+Although I briefly describe how to set up AWS EC2 and S3 using the AWS documentation, a number of free and commercial third-party management tools exist to do this via a web browser. i.e. [http://rightscale.com RightScale] and [http://developer.amazonwebservices.com/connect/entry.jspa?externalID=609 Elasticfox]
 
 === EC2 ===
 
-Amazon's [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/index.html documentation] on getting started is clear and useful. There are many different Amazon Machine Images (AMIs) available, but Amazon only officially provide Fedora 8 for Linux. Canonical provide images of Ubuntu
+First you need a server. 
 
-Next, in addition to using the AWS Management Console, you should also set up and learn how to use the [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/ commandline tools].
+Amazon's [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/index.html documentation] on getting started is clear and useful. There are many different Amazon Machine Images (AMIs) available, but Amazon currently only provide Fedora 8 for Linux. Canonical provide images of Ubuntu but the AWS Ubuntu community also use [Eric Hammond's AMIs http://alestic.com] which are kept current. There is also a mailing list for [http://groups.google.com/group/ec2ubuntu Ubuntu on EC2]. JISCPress is based on Hammond's current (29/06/09) European Jaunty 32bit server AMI (ami-0db89079). 
+
+Amazon's EC2 services can be managed by their [https://console.aws.amazon.com/ Console] but you should also set up and learn how to use the [http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/ commandline tools].
 
 If you use OS X to work on AWS, you need to get your paths right. The Amazon documentation does not account for OS X. There's a good explanation on [http://www.robertsosinski.com/2008/01/26/starting-amazon-ec2-with-mac-os-x this blog].
 
@@ -43,23 +65,23 @@ Go here for [http://docs.amazonwebservices.com/AmazonS3/latest/gsg/ S3 documenta
 
 === Elastic Block Storage ===
 
-This is simply a way to add a disk to your AMI. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-ebs.html documentation] on setting EBS up and using it.
+This is simply a way to add a disk to your AMI. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/using-ebs.html documentation] on setting EBS up and using it. We used the Management Console to handle this. 
 
-The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing important data. EBS provides persistent storage beyond the lifetime of any AMI it has been attached to. You should treat it like a disk and unmount it before detaching it from an AMI. You can snapshot EBS to create backups of the data, too. You can't mount S3 storage as a drive on your AMI, but you can do so with EBS. Typically, I am rsyncing data from the /var /etc /root and /home directories on the AMI to EBS and making daily snapshots.
+The reasons for using EBS is to safeguard against anything happening to your AMI and consequently losing important data. EBS provides persistent storage beyond the lifetime of any AMI it has been attached to. You should treat it like a disk and unmount it before detaching it from an AMI. You can snapshot EBS to create backups of the data, too. You can't easily mount S3 storage as a drive on your AMI, but you can do so with EBS. 
 
 ==Elastic IP addresses===
 
-This provides a permanent, static IP address that you 'own'. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/concepts-elastic-addressing.html documentation] on what an elastic IP address is and how to use one. They are free as long as they are in use. They are useful because you can assign any of your AMIs to the IP address and use the address in your DNS records. For example, you might have two AMIs that you want to hot swap to a given domain name without having to change the DNS record for the domain name.
+This provides a permanent, static IP address that you 'own'. There is good [http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/concepts-elastic-addressing.html documentation] on what an elastic IP address is and how to use one. They are free as long as they are in use. They are useful because you can assign any of your AMIs to the IP address and use the address in your DNS records. For example, you might have two AMIs that you want to hot swap to a given domain name without having to change the DNS record for the domain name. Again, we used the Management Console to handle this. 
 
 ===Tips===
 
  * The Amazon documentation is, on the whole, very good. However, there are times when it is not clear whether the commandline tool they refer to is part of the local toolkit or on the AMI. 
 
- * Once you've got a private AMI registered and you can login using ssh, you need to set up the server for handling web and mail traffic.  Amazon's Fedora AMI is old so proceeded to update it to Fedora 11. Note that the kernel does not get updated. Amazon provide kernels that are tested to work on their service.
+ * Once you've got a private AMI registered and you can login using ssh, you need to set up the server for handling web and mail traffic.  
 
  * You should be aware that terminating your private AMI really does 'destroy' any changes you've made to the machine since it was last started. OS upgrades and changes to config files will all be lost if you terminate your AMI. You can however reboot your machine without terminating it and you will not lose data.
 
- * In addition, since JISCPress runs on Fedora, the [http://docs.fedoraproject.org/ Fedora Project documentation] might be useful.
+ * In addition, since JISCPress runs on Ubuntu, the [https://help.ubuntu.com/community/EC2StartersGuide Ubuntu EC2 Starters Guide] might be useful.
 
  * Your AMI will be assigned a dynamic, alpha-numeric hostname. This means that you can't create your own reverse DNS record for your mail server and consequently a lot of mail from your server will be marked as spam. For our project purposes, we can probably live with this, but for a full-time production service, mail would need to be relayed by an external service. It's worth [http://developer.amazonwebservices.com/connect/search.jspa?searchKB=true&searchForums=true&searchQuery=&threadID=&q=ptr+OR+%22reverse+dns%22&objID=f30&dateRange=last30days&userID=&numResults=15&rankBy=10001 checking the AWS forums] to see if this situation has changed.
 
