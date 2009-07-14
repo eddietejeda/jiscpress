@@ -1,5 +1,5 @@
 #summary An overview of the project for people testing JISCPress
-#labels Testing
+#labels Testing,Featured
 
 = Introduction =
 
@@ -19,4 +19,5 @@ We really would appreciate any feedback you might have. Please use [http://jiscp
   # If you find a bug, please report it [http://jiscpress.uservoice.com/pages/16603-jiscpress/suggestions/257077-bugs-bugs-bugs-report-misc-bugshere here]. 
   # If you want to suggest a new feature please add it to [http://jiscpress.uservoice.com UserVoice]. 
   # If you want to suggest an improvement to an existing feature, please search for it on [http://jiscpress.uservoice.com UserVoice] and add a comment if the specific feature already exists. If it does not exist, please add it as a new entry.
-  #
+
+...needs more...
