@@ -57,6 +57,7 @@ export EC2_URL=https://eu-west-1.ec2.amazonaws.com
 
 You can either choose to do everything via the commandline or use the Management Console for some tasks and the commandline for others.
 
+[http://s3.amazonaws.com/awsVideos/CustomizeAnExistingAMI/Customize%20an%20Existing%20AMI.html How to Customise an Existing Amazon EC2 Machine Image] (Video tutorial)
 === S3 ===
 
 Once you've got an AMI up and running and have access to the commandline tools, you should prepare your server and then 'bundle' the AMI as your own private machine and offload it to the S3 storage service.
