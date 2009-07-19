@@ -9,6 +9,7 @@ This page provides guidance for people who wish to test JISCPress during its dev
 
 ===Learn about the project===
 
+  * [http://jiscpress.blogs.lincoln.ac.uk/ Project Blog]. Lots of useful links in the sidebar. 
   * [http://docs.google.com/Doc?id=dc4c9rrc_154d82jk9df&hl=en_GB Project Bid].
   * [https://docs.google.com/Doc?id=dc4c9rrc_161hq2bfrfq&hl=en_GB Project Plan]
   * [http://code.google.com/p/jiscpress/issues/list?can=2&q=&sort=milestone&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary Issue Tracker]. The Issue Tracker shows which features are planned and being actively worked on.
