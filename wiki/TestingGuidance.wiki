@@ -9,8 +9,11 @@ This page provides guidance for people who wish to test JISCPress during its dev
 
 ===Learn about the project===
 
-  # Please be aware of the main objectives of this project and what we aim to achieve. The original project proposal is [http://docs.google.com/Doc?id=dc4c9rrc_154d82jk9df&hl=en_GB here]. This will be updated with the final Project Plan by end of July.
-  # You are free to test http://jiscpress.org at any time, but please be aware that it is running code that is under development. We will announce 'points of stability' for testing specific functionality. We aim to do this at least once a month.
+  * [http://docs.google.com/Doc?id=dc4c9rrc_154d82jk9df&hl=en_GB Project Bid].
+  * [https://docs.google.com/Doc?id=dc4c9rrc_161hq2bfrfq&hl=en_GB Project Plan]
+  * [http://code.google.com/p/jiscpress/issues/list?can=2&q=&sort=milestone&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary Issue Tracker]. The Issue Tracker shows which features are planned and being actively worked on.
+
+You are free to test http://jiscpress.org at any time, but please be aware that it is running code that is under development. 
 
 ===How to provide feedback===
 
@@ -19,5 +22,3 @@ We really would appreciate any feedback you might have. Please use [http://jiscp
   # If you find a bug, please report it [http://jiscpress.uservoice.com/pages/16603-jiscpress/suggestions/257077-bugs-bugs-bugs-report-misc-bugshere here]. 
   # If you want to suggest a new feature please add it to [http://jiscpress.uservoice.com UserVoice]. 
   # If you want to suggest an improvement to an existing feature, please search for it on [http://jiscpress.uservoice.com UserVoice] and add a comment if the specific feature already exists. If it does not exist, please add it as a new entry.
-
-...needs more...
