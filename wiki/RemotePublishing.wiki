@@ -9,7 +9,7 @@ Site used: http://remotepub.jiscpress.org/
 
 =Methodology=
 
-For the testing of each client, the [http://jisc.ac.uk/fundingopportunities/funding_calls/2009/03/309ricall.aspx original word document] for the #jiscri call was used. The entire text was selected ('select all'), copied and pasted into the client software and published as a single post to examine how JISCPress (using the Digress plugin and default theme) would format the document without any intervention.  We aim to achieve a presentation which is consistent with the original source document and clearly divides paragraphs and other elements into logical 'atomised' parts which can be commented on.  Where this was clearly not achieved on first attempt, we document the changes we made to achieve this and possible improvements to JISCPress to accommodate these issues.
+For the testing of each client, the the entire text was selected ('select all'), copied and pasted into the client software and published as a single post to examine how JISCPress (using the Digress plugin and default theme) would format the document without any intervention.  We aim to achieve a presentation which is consistent with the original source document and clearly divides paragraphs and other elements into logical 'atomised' parts which can be commented on.  
 
 = Software =
 
@@ -22,8 +22,14 @@ For the testing of each client, the [http://jisc.ac.uk/fundingopportunities/fund
 
 [http://remotepub.jiscpress.org/2009/07/14/ms-word-2008-os-x-to-wordpress-tinymce/ Test 2]. This is a single copy and paste of the entire document. The rich text formatting was preserved. However, the default Digress theme (at time of testing), did not preserve tables, when compared to the Kubrick, default WordPress theme.
 
+==Windows XP==
+
 ===MS Word 2007===
 
 [http://office.microsoft.com/en-us/word/HA101640211033.aspx Support] for using Word 2007 to blog to WordPress.
 
 [http://remotepub.jiscpress.org/2009/07/14/ms-word-2007-to-wordpress-tinymce/ Test 3]. This is a single copy and paste of the entire document. The rich text formatting was preserved. However, the default Digress theme (at time of testing), did not preserve tables, when compared to the Kubrick, default WordPress theme.
+
+===MS Live Writer===
+
+[http://remotepub.jiscpress.org/2009/08/07/jisc-strategy-ms-live-writer-with-tables-copy-and-paste-from-word-2007/ Test 4]. This is a single copy and paste from Word 2007 on XP, to MS Live Writer.  It is largely successful in preserving the original formatting and compatible with the DigressIt plugin and theme. At the time of testing, DigressIt does not recognise tables, but that is being added to the next version (so may be fixed if you are reading this at a later date!). The section sub-headings were not preserved in the copy and paste into Live Writer. I manually changed them to *Heading 5* in Live Writer, but this results in headings which are too small in DigressIt. Perhaps *Heading 3* would work better.
