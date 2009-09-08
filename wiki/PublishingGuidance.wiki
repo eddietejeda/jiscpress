@@ -1,5 +1,5 @@
 #summary Guidance for document authors
-#labels authoring,publishing
+#labels authoring,publishing,Featured
 
 Add your content here.
 
