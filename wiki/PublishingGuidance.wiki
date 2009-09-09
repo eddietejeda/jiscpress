@@ -1,12 +1,17 @@
 #summary Guidance for document authors
 #labels authoring,publishing,Featured
 
-Add your content here.
+= Publishing a JISCPress document =
 
+== Introduction ==
 
-= Details =
+JISCPress is a WordPress-based platform so many of the same methods and conventions for writing a WordPress blog post apply to JISCPress. The significant difference is that JISCPress documents occupy an entire 'blog' or WordPress site. This allows you to divide your document into sections and each section is a WordPress blog post.  It can get confusing discussing blog posts and document sections, so from hereon, note the following:
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+WordPress blog site = A single JISCPress document
+WordPress blog post = A single JISCPress document section
+
+You can publish large (100 + section) documents or small (1 section) documents on JISCPress. It helps if your sections are relatively short. We are, afterall, publishing on the web, and long sections will take longer for the reader to download in their browser. There is nothing to stop you publishing sub-sections separately.
+
+== How JISCPress works ==
+
+JISCPress uses [http://digress.it digress.it] to transform your site into a self-contained document with a Table of Contents.
