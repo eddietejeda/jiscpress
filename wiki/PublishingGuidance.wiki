@@ -8,16 +8,46 @@
 JISCPress is a WordPress-based platform so many of the same methods and conventions for writing a WordPress blog post apply to JISCPress. The significant difference is that JISCPress documents occupy an entire 'blog' or WordPress site. This allows you to divide your document into sections and each section is a WordPress blog post.  It can get confusing discussing blog posts and document sections, so from hereon, note the following:
 
 WordPress blog site = A single JISCPress document
+
 WordPress blog post = A single JISCPress document section
 
 You can publish large (100 + section) documents or small (1 section) documents on JISCPress. It helps if your sections are relatively short. We are, afterall, publishing on the web, and long sections will take longer for the reader to download in their browser. There is nothing to stop you publishing sub-sections separately.
 
 == How JISCPress works ==
 
-JISCPress uses [http://digress.it digress.it] to transform your site into a self-contained document with a Table of Contents. digress.it automatically discovers the paragraphs in each document section and assigns them a unique link (URI) so that people can comment on specific paragraphs of text.
+JISCPress uses [http://digress.it digress.it] to transform your site into a self-contained document with a Table of Contents. The reader can easily navigate backwards and forwards from one section to another using the links at the top and bottom of each document section.
 
-Other parts of your document structure are also auto-discovered by digress.it. If you have images, tables or lists in your document, digress.it will find those and assign a unique link for those, too. Our tests have shown digress.it to be very accurate in reading your document section structure and you should not have to make any adjustments. If you repeatedly find a problem, please let us know.
+digress.it automatically discovers the paragraphs in each document section and assigns them a unique link (URI) so that people can comment, annotate or discuss specific paragraphs of text.
+
+Other parts of your document structure are also auto-discovered by digress.it. If you have images, tables, quotes, headinngs or lists in your document, digress.it will find them and assign a unique link for those, too. Our tests have shown digress.it to be very accurate in reading your document section structure and (ideally) you should not have to make any adjustments. If you repeatedly find a problem, please let us know.
 
 digress.it has options to allow you to order your sections in a number of ways. However, the simplest option is to author your document sections in chronological order, starting with the title page or introduction and finishing with the conclusion of the document.  Normally, WordPress would publish blog posts, with the most recent, first. digress.it merely reverses the order and displays the sections in the order that you authored them (unless you have configured it otherwise).
 
-Headings, block quotes and other formatting conventions are discovered by digress.it and should be retained in the final document. As with any Wordpress site, you can significantly alter the presentation of a site by developing your own WordPress theme or making adjustments to the stylesheet of an existing theme. digress.it allows you to select different stylesheets. Currently we offer two: 'default' and 'classic'.
+As with any Wordpress site, you can significantly alter the presentation of a site by developing your own WordPress theme or making adjustments to the stylesheet of an existing theme. digress.it allows you to select different stylesheets. Currently we offer two: 'default' and 'classic'.
+
+== Ways to author a document for JISCPress ==
+
+We appreciate that many documents are written using a Word Processor and have tried to ensure that documents written in this way can be easily published on JISCPress. However, if you do not need to author your document in a Word Processor, there are advantages to authoring directly in the WordPress online editor:
+
+* Multiple authors can collaborate writing a single document
+* A complete revision history of the document is maintained with the ability to roll-back to earlier versions.
+* Produces a web-ready document, native to JISCPress. There is no two-stage process of 're-publishing' on JISCPress. You just write and publish.
+* You can embed video and other objects, using the full power and versatility of WordPress.
+
+Document that are written in Word Processors can be posted to JISCPress using built in blogging features in Word 2007 and Open Office. This uses a method called XML-RPC and 'posts' content from your desktop software to WordPress/JISCPress.
+
+You can also use dedicated [http://codex.wordpress.org/Weblog_Client desktop blogging software]. We have seen very good results with JISCPress, simply copying from your Word document, into a desktop client and posting to WordPress. 
+
+Alternatively, you can select text from your original document, copy it and paste it into the WordPress editor. The original formatting is usually maintained.
+
+In summary, you can author and publish in the following ways, to suit your workflow:
+
+# Author directly in the WordPress editor
+# Author directly in a desktop blogging client i.e. Windows Live Writer
+# Author in Microsoft Word or Open Office and post to JISCPress
+# Author in Word or Open Office and copy and paste into a desktop blogging client
+# Author in Word or Open Office and copy and paste into the WordPress editor
+
+The Wordpress editor has an icon with the Microsoft Word icon on it. If you use that, to paste your text into the WordPress editor, your original formatting should be faithfully retained.
+
+Whichever way you choose, digress.it should discover standard formatting conventions and publish them accurately.  If you have created a highly stylised document in your Word Processor with unconventional layout, this will be lost, as will the original typography.  You can control the typography through adjustments to the digress.it stylesheet (if you are able to upload new stylesheets to the server).
