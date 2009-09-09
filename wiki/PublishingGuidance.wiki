@@ -29,10 +29,11 @@ As with any Wordpress site, you can significantly alter the presentation of a si
 
 We appreciate that many documents are written using a Word Processor and have tried to ensure that documents written in this way can be easily published on JISCPress. However, if you do not need to author your document in a Word Processor, there are advantages to authoring directly in the WordPress online editor:
 
-* Multiple authors can collaborate writing a single document
-* A complete revision history of the document is maintained with the ability to roll-back to earlier versions.
-* Produces a web-ready document, native to JISCPress. There is no two-stage process of 're-publishing' on JISCPress. You just write and publish.
-* You can embed video and other objects, using the full power and versatility of WordPress.
+  * Multiple authors can easily collaborate on a single document
+  * A complete revision history of the document is maintained with the ability to roll-back to earlier versions.
+  * Produces a web-ready document, native to JISCPress. There is no two-stage process of 're-publishing' on JISCPress. You just write and publish.
+  * You can embed video and other objects, using the full power and versatility of WordPress.
+
 
 Document that are written in Word Processors can be posted to JISCPress using built in blogging features in Word 2007 and Open Office. This uses a method called XML-RPC and 'posts' content from your desktop software to WordPress/JISCPress.
 
@@ -42,12 +43,20 @@ Alternatively, you can select text from your original document, copy it and past
 
 In summary, you can author and publish in the following ways, to suit your workflow:
 
-# Author directly in the WordPress editor
-# Author directly in a desktop blogging client i.e. Windows Live Writer
-# Author in Microsoft Word or Open Office and post to JISCPress
-# Author in Word or Open Office and copy and paste into a desktop blogging client
-# Author in Word or Open Office and copy and paste into the WordPress editor
+  # Author directly in the WordPress editor
+  # Author directly in a desktop blogging client i.e. Windows Live Writer
+  # Author in Microsoft Word or Open Office and post to JISCPress
+  # Author in Word or Open Office and copy and paste into a desktop blogging client
+  # Author in Word or Open Office and copy and paste into the WordPress editor
 
-The Wordpress editor has an icon with the Microsoft Word icon on it. If you use that, to paste your text into the WordPress editor, your original formatting should be faithfully retained.
+The Wordpress editor has an icon with the Microsoft Word icon on it. If you use that, to paste your text into the WordPress editor, your original formatting should be faithfully retained. You can also edit your original document once it's on JISCPress, adding multimedia, gadgets and widgets. If it is supported by WordPress, it is supported by JISCPress.
 
-Whichever way you choose, digress.it should discover standard formatting conventions and publish them accurately.  If you have created a highly stylised document in your Word Processor with unconventional layout, this will be lost, as will the original typography.  You can control the typography through adjustments to the digress.it stylesheet (if you are able to upload new stylesheets to the server).
+Whichever way you choose to author and publish your document, digress.it should discover standard formatting conventions and publish them accurately.  If you have created a highly stylised document in your Word Processor with unconventional layout, this will be lost, as will the original typography.  You can control the typography through adjustments to the digress.it stylesheet (if you are able to upload new stylesheets to the server).
+
+== Publishing your document ==
+
+Once you have your document sections finished and saved as drafts, preview them to ensure that digress.it renders your content faithfully.  Proof read your document carefully as it is much better to make minor changes prior to publishing than after publishing.  it is important that once you publish each document section, you do not alter the paragraph structure of the section. This is because people will comment on specific paragraphs that are identified by unique links (URIs). If you add or remove a paragraph after someone has commented on a section, their comment will point to the wrong paragraph.
+
+We are looking for a solution to allow comments to 'follow' paragraphs if they location, but this has not yet been implemented. Nevertheless, it is good practice to take your time preparing your document and once it is published, do not add or remove a paragraph from a section that has one or more comments.  If a document section has received no comments, it is safe to make changes.
+
+When you have previewed and proof-read your document, you can batch publish each section at once using the WordPress 'Bulk Actions' feature under 'Posts - Edit'.
