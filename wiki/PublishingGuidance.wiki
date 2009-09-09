@@ -19,7 +19,7 @@ JISCPress uses [http://digress.it digress.it] to transform your site into a self
 
 digress.it automatically discovers the paragraphs in each document section and assigns them a unique link (URI) so that people can comment, annotate or discuss specific paragraphs of text.
 
-Other parts of your document structure are also auto-discovered by digress.it. If you have images, tables, quotes, headinngs or lists in your document, digress.it will find them and assign a unique link for those, too. Our tests have shown digress.it to be very accurate in reading your document section structure and (ideally) you should not have to make any adjustments. If you repeatedly find a problem, please let us know.
+Other parts of your document structure are also auto-discovered by digress.it. If you have images, tables, quotes, headings or lists in your document, digress.it will find them and assign a unique link for those, too. Our tests have shown digress.it to be very accurate in reading your document section structure and (ideally) you should not have to make any adjustments. If you repeatedly find a problem, please let us know.
 
 digress.it has options to allow you to order your sections in a number of ways. However, the simplest option is to author your document sections in chronological order, starting with the title page or introduction and finishing with the conclusion of the document.  Normally, WordPress would publish blog posts, with the most recent, first. digress.it merely reverses the order and displays the sections in the order that you authored them (unless you have configured it otherwise).
 
