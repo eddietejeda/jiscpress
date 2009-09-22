@@ -5,5 +5,6 @@
 
   # [TestingGuidance]
   # [AmazonWebServices]
+  # [PublishingGuidance]
   # [RemotePublishing]
   # [PlatformFeatures]
