@@ -18,3 +18,7 @@ http://test.jiscpress.org/?p=15&digressit-embed=1&format=rss
 http://test.jiscpress.org/?p=15&digressit-embed=1&format=html
 
 http://test.jiscpress.org/?p=15&digressit-embed=1&format=json
+
+== Document Level ==
+
+RDF/JSON/Linked Data via Triplify. i.e. http://alextest.jiscpress.org/triplify
