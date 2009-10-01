@@ -1,0 +1,16 @@
+#summary Describes the OpenData possibilities of the JISCPress platform.
+
+= Introduction =
+
+In progress...
+
+
+= Details =
+
+== Paragraph level ==
+
+http://test.jiscpress.org/?p=15&digressit-embed=1&format=xml
+http://test.jiscpress.org/?p=15&digressit-embed=1&format=text
+http://test.jiscpress.org/?p=15&digressit-embed=1&format=rss
+http://test.jiscpress.org/?p=15&digressit-embed=1&format=html
+http://test.jiscpress.org/?p=15&digressit-embed=1&format=json
