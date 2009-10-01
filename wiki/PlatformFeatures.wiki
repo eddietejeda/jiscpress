@@ -4,6 +4,22 @@
 
 == A document ==
 
+ * Author your document in WordPress, from Office 2007, Live Writer or any other blogging client.
+ * Comment/annotate/discuss any document paragraph, image, table, list or header.
+ * Comment/annotate/discuss any document section.
+ * The comment box follows your reading and is right where you need it.
+ * Resize and drag the commentbox to suit you. Minimise it out of the way.
+ * See realtime pulse notifications when someone else comments. 
+ * Browse dicussions by commenter or by document section. Links go straight back to the discussion.
+ * Track discussions with RSS feeds for: document, section and paragraph comments. There's an RSS feed for each comment author, too. 
+ * Easily cite a paragraph with copy and paste code. 
+ * Links to paragraphs from anywhere on the web. Each paragraph has a permalink.
+ * Comment remotely from your own blog or 'trackback' enabled CMS.
+ * Works across all browsers, including IE6!
+ * Export your document, section or paragraph to RSS.
+ * Any paragraph is available via URI as text, HTML, XML, JSON and RSS. See OpenData for more details.
+ * 
+
 == The Platform ==
 
 == Elsewhere ==
