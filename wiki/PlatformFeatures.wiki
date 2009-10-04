@@ -13,7 +13,7 @@
  * Browse discussions by commenter or by document section. Links go straight back to the discussion.
  * Follow discussions via RSS feeds for: document, section and paragraph comments. There's an RSS feed for each comment author, too. 
  * Easily cite a paragraph with copy and paste code. 
- * Links to paragraphs from anywhere on the web. Each paragraph has a permalink.
+ * Link to paragraphs from anywhere on the web. Each paragraph has a permalink.
  * Comment remotely from your own blog or 'trackback' enabled CMS.
  * Works across all browsers, including IE6!
  * Export your document, section or paragraph to XML.
