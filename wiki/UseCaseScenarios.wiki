@@ -1,0 +1,23 @@
+#summary Documents the Use Cases which JISCPress has been designed for.
+
+== Introduction ==
+
+The JISCPress platform is a Content Management System for publishing complete documents online in an open and flexible format. Notably, the documents can be annotated, commented on and discussed in considerable detail. Readers can comment on every paragraph and every section of the document as well as reply to earlier comments and develop threaded discussions around a single paragraph of text. As a complete platform, the full text of all documents can be searched and documents can be organised in a way for easy browsing and discovery. In essence, documents published on JISCPress become highly flexible, social objects, native to the web.
+
+== Use Case One: Publishers ==
+
+JISCPress was developed as a prototype for the [http://www.jisc.ac.uk/ Joint Information Systems Committee (JISC)]. It is based on our work on [http://writetoreply.org WriteToReply] and intended as a platform for JISC to publish funding calls and for funded projects to publish their final reports. 
+
+Currently, a [http://www.jisc.ac.uk/fundingopportunities/funding_calls/2009/09/0909greenict.aspx typical funding call] is published as a web page containing an overview of the call and a link to a PDF or Word document containing the full details of the call. 
+
+Similarly, when a funded project is completed, the project outputs, including a final report are [http://www.jisc.org.uk/whatwedo/programmes/resourcediscovery/googlegen.aspx published on the JISC website] with a one page overview and a list of Word or PDF documents for download.
+
+It is also worth noting that for many of JISC's funding calls, a 'Town Meeting' is arranged where people interested in submitting a funding bid can attend a briefing and ask questions related to the programme and funding call. As a networking event, partnerships between institutions may also be formed.
+
+JISCPress can complement each of these areas of a JISC Programme's work. 
+
+By publishing the funding call as a document on JISCPress, a managed, structured, navigable XHTML version of the call is published. The full text of the document is searchable and each section and each paragraph of the document can be commented on. For some calls, it may be sufficient for the document itself to become the focus of an asynchronous 'Town Meeting', where interested bidders can ask questions directed at specific parts of the funding call document. JISC Programme Managers can reply to the questions and avoid repetition by replying in public.  The document might also act as a 'hub' for interested people to discuss a bid and possibly partner on a project proposal. 
+
+An example of how this worked for the JISCRI funding call can be seen on [http://writetoreply.org/jiscri/ WriteToReply]. Note that the document can also contain supporting materials such as a [http://writetoreply.org/jiscri/2009/03/31/why-rapid-innovation/ presentation] or [http://writetoreply.org/jiscri/2009/03/31/podcast-from-programme-managers/ podcast].
+
+
