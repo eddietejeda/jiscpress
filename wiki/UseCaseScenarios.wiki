@@ -41,4 +41,24 @@ JISCPress (or rather WordPress Multi-User) has the following use roles:
 
 The Platform Administrator controls the entire installation of JISCPress. They do not require any specific technical skills but should be prepared to liaise with the server administrator when performing upgrades to JISCPress. The Platform Administrator can delete document sites, add plugins and control any JISCPress document site. The Platform Administrator also controls the users on the platform and can determine whether new users can sign up to JISCPress and whether they can create document sites. We recommend that the Platform Administrator restricts automated user accounts to LDAP users. This would mean that any member of JISC staff could login to JISCPress using their existing staff username and password and create a document site if they wish. For authors of project final reports, we recommend that a user account is created by the Platform Administrator for each Project Manager who is expected to submit their report. Once the Project Manager has an account, they can create a document site and author their report independently. Ideally, authoring their document in this way would be a requirement of funding. 
 
-The Site Administrator controls a document site. Once logged in to JISCPress, they can choose to create a new document site (or not). The creation of a document site is partially automated for the Site Administrator. They will be asked to provide a suitable domain name and enter the title of their document. Following this, the framework of the site is created and will present the user with a WordPress site with a pre-determined category tree, theme, privacy settings, discussion settings, and so on. All that is required is for the Administrator to author the document and, if they wish, add co-authors to their document site. Like the Site Administrator account, these are local accounts, not connected to LDAP.
+The Site Administrator controls a document site. Once logged in to JISCPress, they can choose to create a new document site (or not). The creation of a document site is partially automated for the Site Administrator. They will be asked to provide a suitable domain name and enter the title of their document. Following this, the framework of the site is created and will present the user with a WordPress site with a pre-determined category tree, theme, privacy settings, discussion settings, and so on. All that is required is for the Administrator to author the document, select the appropriate categories, provide keywords/tags and, if they wish, add co-authors to their document site. Like the Site Administrator account, these are local accounts, not connected to LDAP.
+
+We recommend that Site Administrators add any further users as Editors of the document. This will allow those individuals to both author text and edit other user's text, including the Site Administrator's text. Editors can publish content but are not able to manage the document site.
+
+The Author role is even further restricted, only allowing a user to author and publish text. They are not able to edit other user's text. 
+
+The Contributor role is further restricted and only allows the user to author text. They are not able to edit other user's text or publish any text. Within the controlled environment of JISCPress, this may be unnecessarily restrictive. 
+
+The Subscriber role is simply a way for users to register on a document site. If Site Administrators wish to restrict comments to registered users, they can do so by registering (or being registered) as subscribers. 
+
+==== Workflow ====
+
+ # JISC staff member logs in
+ # Clicks on Menu --> My Documents --> Create a Document
+ # Enters sub-domain name, Document title and preferred privacy settings. (Title and privacy can be changed at any time; domain name cannot).
+ # Navigates via Menu to new document 'Dashboard'
+ # Navigates to Post --> Add New
+ # Authors first section of the new document
+ # Selects categories, adds tags, clicks Publish.
+ # Repeats 5 - 7 until all document sections are published.
+ # 
