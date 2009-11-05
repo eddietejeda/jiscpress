@@ -20,4 +20,25 @@ By publishing the funding call as a document on JISCPress, a managed, structured
 
 An example of how this worked for the JISCRI funding call can be seen on [http://writetoreply.org/jiscri/ WriteToReply]. Note that the document can also contain supporting materials such as a [http://writetoreply.org/jiscri/2009/03/31/why-rapid-innovation/ presentation] or [http://writetoreply.org/jiscri/2009/03/31/podcast-from-programme-managers/ podcast].
 
+=== How would it actually work for JISC staff? ===
 
+We see JISCPress complementing and improving the way in which funding calls are currently issued. It is not a replacement for the current method of issuing a call. 
+
+Each document has its own unique web address, as does each section and each paragraph. In addition, each paragraph can be easily cited on JISC's existing web pages, by simply copying and pasting the available 'embed code'. We imagine that JISC would highlight the document on the funding call page so that readers are encouraged to go to the site for full details of the call. The existing Word or PDF versions of the call could continue to be hosted on the jisc.ac.uk website (presumably using the existing CMS) or could be hosted on the JISCPress platform alongside the full-text document. 
+
+Clearly this is additional work for JISC staff, but we believe the benefits are worth it and the process of publishing a document on JISCPress can be made quite straightforward.  
+
+==== Role Management ====
+
+JISCPress (or rather WordPress Multi-User) has the following use roles:
+
+ * Platform Administrator
+ * Site Administrator
+ * Editor
+ * Author
+ * Contributor
+ * Subscriber
+
+The Platform Administrator controls the entire installation of JISCPress. They do not require any specific technical skills but should be prepared to liaise with the server administrator when performing upgrades to JISCPress. The Platform Administrator can delete document sites, add plugins and control any JISCPress document site. The Platform Administrator also controls the users on the platform and can determine whether new users can sign up to JISCPress and whether they can create document sites. We recommend that the Platform Administrator restricts automated user accounts to LDAP users. This would mean that any member of JISC staff could login to JISCPress using their existing staff username and password and create a document site if they wish. For authors of project final reports, we recommend that a user account is created by the Platform Administrator for each Project Manager who is expected to submit their report. Once the Project Manager has an account, they can create a document site and author their report independently. Ideally, authoring their document in this way would be a requirement of funding. 
+
+The Site Administrator controls a document site. Once logged in to JISCPress, they can choose to create a new document site (or not). The creation of a document site is partially automated for the Site Administrator. They will be asked to provide a suitable domain name and enter the title of their document. Following this, the framework of the site is created and will present the user with a WordPress site with a pre-determined category tree, theme, privacy settings, discussion settings, and so on. All that is required is for the Administrator to author the document and, if they wish, add co-authors to their document site. Like the Site Administrator account, these are local accounts, not connected to LDAP.
