@@ -9,4 +9,4 @@
   # [RemotePublishing]
   # [PlatformFeatures]
   # [TestingGuidance]
-  # [JISCPress Administration]
+  # [JISCPressAdministration]
