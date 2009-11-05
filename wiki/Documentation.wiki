@@ -2,9 +2,11 @@
 #labels Documentation,Featured
 
 = Overview =
-
-  # [TestingGuidance]
+  # [IndividualUseCaseScenarios]
+  # [OrganisationalUseCaseScenarios]
   # [AmazonWebServices]
   # [PublishingGuidance]
   # [RemotePublishing]
   # [PlatformFeatures]
+  # [TestingGuidance]
+  # [JISCPress Administration]
