@@ -2,8 +2,7 @@
 #labels Documentation,Featured
 
 = Overview =
-  # [IndividualUseCaseScenarios]
-  # [OrganisationalUseCaseScenarios]
+  # [UseCaseScenarios]
   # [AmazonWebServices]
   # [PublishingGuidance]
   # [RemotePublishing]
