@@ -51,7 +51,7 @@ The Contributor role is further restricted and only allows the user to author te
 
 The Subscriber role is simply a way for users to register on a document site. If Site Administrators wish to restrict comments to registered users, they can do so by registering (or being registered) as subscribers. 
 
-==== Workflow ====
+==== Workflow 1 ====
 
  # JISC staff member logs in
  # Clicks on Menu --> My Documents --> Create a Document
@@ -61,4 +61,15 @@ The Subscriber role is simply a way for users to register on a document site. If
  # Authors first section of the new document
  # Selects categories, adds tags, clicks Publish.
  # Repeats 5 - 7 until all document sections are published.
- # 
+
+==== Workflow 2 ====
+
+ # JISC staff member logs in
+ # Clicks on Menu --> My Documents --> Create a Document
+ # Enters sub-domain name, Document title and preferred privacy settings. (Title and privacy can be changed at any time; domain name cannot).
+ # Adds document site address to Word 2007, Open Office or preferred blogging client.
+ # Authors first section of the new document
+ # Selects categories, adds tags, clicks Publish.
+ # Repeats 5 - 7 until all document sections are published.
+
+It may be that JISC would prefer a greater amount of administrative control over the creation of document sites and publishing of documents. In that case, the Platform Administrator (there can be more than one person in this role), would create the document site and add users to a document site with the role of Editor, Author or Contributor. Full editorial control by JISC over each document site would require document authors to be given the Contributor role. 
