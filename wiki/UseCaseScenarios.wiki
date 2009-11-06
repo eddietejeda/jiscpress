@@ -72,6 +72,8 @@ The Subscriber role is simply a way for users to register on a document site. If
  # Selects categories, adds tags, clicks Publish.
  # Repeats 5 - 6 until all document sections are published.
 
+It may help here to refer to the PublishingGuidance.
+
 It may be that JISC would prefer a greater amount of administrative control over the creation of document sites and publishing of documents. In that case, the Platform Administrator (there can be more than one person in this role), would create the document site and add users (JISC staff or funded Project Managers) to a document site with the role of Editor, Author or Contributor. Full editorial control by JISC over each document site would require document authors to be given a Contributor role. 
 
 == Use Case Two: Readers ==
