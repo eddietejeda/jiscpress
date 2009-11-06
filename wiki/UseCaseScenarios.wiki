@@ -70,6 +70,36 @@ The Subscriber role is simply a way for users to register on a document site. If
  # Adds document site address to Word 2007, Open Office or preferred blogging client.
  # Authors first section of the new document
  # Selects categories, adds tags, clicks Publish.
- # Repeats 5 - 7 until all document sections are published.
+ # Repeats 5 - 6 until all document sections are published.
 
-It may be that JISC would prefer a greater amount of administrative control over the creation of document sites and publishing of documents. In that case, the Platform Administrator (there can be more than one person in this role), would create the document site and add users to a document site with the role of Editor, Author or Contributor. Full editorial control by JISC over each document site would require document authors to be given the Contributor role. 
+It may be that JISC would prefer a greater amount of administrative control over the creation of document sites and publishing of documents. In that case, the Platform Administrator (there can be more than one person in this role), would create the document site and add users (JISC staff or funded Project Managers) to a document site with the role of Editor, Author or Contributor. Full editorial control by JISC over each document site would require document authors to be given a Contributor role. 
+
+== Use Case Two: Readers ==
+
+The role of 'Readers' covers more than one type of JISCPress user who are distinguished from the 'Publisher' user in that they are not document authors.
+
+=== Role: Reader ===
+
+A Reader of JISCPress may simply wish to learn more about a funding call or a funded project output. They may be directed to a JISCPress document via a referring link from jisc.ac.uk or from a search engine.  Because the full-text of the document is available and has a URI for each paragraph and each document section, they may be referred to a specific paragraph or document section. Additionally, a JISCPress document is also available as a news feed for reading in a news reader. 
+
+=== Role: Commenter ===
+
+The Reader may wish to make a comment, respond to an existing comment or ask a question about the JISCPress document. As they read the document, they are able to direct a comment at any specific paragraph or on the document section as a whole. Depending on the site settings, they may have to enter their name and email address. If they respond to an existing comment, they can click 'reply' and enter a threaded discussion. Similarly, if reading the document from a news reader, direct links are provided to the paragraphs of the source document to facilitate commenting.
+
+=== Role: Blogger ===
+
+Similarly, the ability to link to a single paragraph is useful when referencing a JISCPress document from another website. An example of this can be seen on [http://nogoodreason.typepad.co.uk/no_good_reason/2009/10/the-ref-a-digital-scholarship-perspective.html Prof. Martin Weller's blog] where he discusses the recent [http://writetoreply.org/refconsultation HEFCE REF Consultation]. He has used the paragraph-level URIs to refer his reader to the specific point in the text that he is discussing. He may also have used the embed code that is available for each JISCPress document, to copy and paste the paragraph he is quoting. If the Blogger's software allows, each link to the JISCPress document, can also leave a 'trackback' notification on the JISCPress document, which might be likened to a 'remote comment' on the URI which has been linked to.
+
+=== Role: Mashup Artist ===
+
+The JISCPress platform includes a number of features which may interest Mashup Artists. These are documented in detail elsewhere, but a simple overview of their uses is given here. 
+
+Each paragraph is available via a URI as JSON, XML, RSS, HTML and TXT. The separation of paragraph data in this way provides the Mashup Artist with an atomised data source for further re-presentation and analysis of the document. 
+
+Each document is available as Linked Data (RDF/N3) either directly from the JISCPress document site or from the Talis Commons Platform API. 
+
+Comments for a) each paragraph, b) each document section, c) each document and d) each Commenter, are available as RSS.
+
+GeoRSS co-ordinates can be included in the feed for each document. This could be used to map funded project reports by their location.
+
+Each document is semantically tagged using OpenCalais. The tags are included as metadata in the HTML source code and could be scraped. 
