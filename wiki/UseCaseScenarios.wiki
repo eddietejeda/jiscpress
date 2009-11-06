@@ -82,6 +82,8 @@ The role of 'Readers' covers more than one type of JISCPress user who are distin
 
 A Reader of JISCPress may simply wish to learn more about a funding call or a funded project output. They may be directed to a JISCPress document via a referring link from jisc.ac.uk or from a search engine.  Because the full-text of the document is available and has a URI for each paragraph and each document section, they may be referred to a specific paragraph or document section. Additionally, a JISCPress document is also available as a news feed for reading in a news reader. 
 
+Futhermore, JISCPress 'advertises' related existing documents on the platform to the reader of a document in the sidebar. Based on semantic, contextual tagging and term extraction, documents are linked and ranked by relevancy to the document section that is currently being read.
+
 === Role: Commenter ===
 
 The Reader may wish to make a comment, respond to an existing comment or ask a question about the JISCPress document. As they read the document, they are able to direct a comment at any specific paragraph or on the document section as a whole. Depending on the site settings, they may have to enter their name and email address. If they respond to an existing comment, they can click 'reply' and enter a threaded discussion. Similarly, if reading the document from a news reader, direct links are provided to the paragraphs of the source document to facilitate commenting.
@@ -103,3 +105,11 @@ Comments for a) each paragraph, b) each document section, c) each document and d
 GeoRSS co-ordinates can be included in the feed for each document. This could be used to map funded project reports by their location.
 
 Each document is semantically tagged using OpenCalais. The tags are included as metadata in the HTML source code and could be scraped. 
+
+RSS feeds are available for a) each document, b) document section, c) document category, d) document tag, e)multiple tags and category combinations
+
+=== Role: Author/Reader ===
+
+In addition to the Publisher use case described above, document authors may also approach JISCPress documents as a Reader. Document authors may reference existing document on the JISCPress platform in their own Project Reports thereby linking documents across the platform at the paragraph level. Likewise, the cite or embed code could also be used to reference existing documents. 
+
+Document authors may also wish to monitor the comments RSS feed or subscribe to comments on the document by email to measure feedback on their work and respond to any questions or comments. They can easily observe who (i.e. within their peer group) is commenting by looking at the 'Commenter' overview page.
