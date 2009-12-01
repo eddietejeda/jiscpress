@@ -49,3 +49,5 @@ Typical document section page (with 36 comments): http://test.jiscpress.org/2009
 <!-- Compression = gzip -->
 
 Once the page is cached, the user should experience faster page loads, depending on the performance of the server, network and their choice of browser.
+
+Using YSlow, a typical digress.it document section receives an overall performance score of 65 (Grade D). A new WordPress blog using the default Kubrick theme and testing the Hello World post, scores 76 (Grade C).
