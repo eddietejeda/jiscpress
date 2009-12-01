@@ -23,7 +23,7 @@ For multiple database setups, use [http://wordpress.org/extend/plugins/hyperdb/ 
 
 == Web server == 
 
-Apache is the most well supported web server for use with WordPress. (WordPress is predominantly, though not exclusively, a LAMP application). It is sufficient for moderate-sized installations, but is not considered to run as quickly as Nginx or L. wordpress.com runs Nginx for serving pages and Apache for serving media. 
+Apache is the most well supported web server for use with WordPress. (WordPress is predominantly, though not exclusively, a LAMP application). It is sufficient for moderate-sized installations, but is not considered to run as quickly as Nginx or Litespeed. wordpress.com runs Nginx for serving pages and Apache for serving media. 
 
 
 == digress.it ==
