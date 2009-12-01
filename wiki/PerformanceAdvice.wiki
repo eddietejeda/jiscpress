@@ -4,7 +4,7 @@ A useful overview of how wordpress.com handles performance related issues, is gi
 
 A useful [http://serverqa.wordpress.com/2009/05/31/ask-your-questions-here/ Q&A] was recently given by Automattic staff for wordpress.com.
 
-Barry, a SysAdmin for wordpress.com also [http://barry.wordpress.com/ blogs] about his work.
+Barry, a SysAdmin for wordpress.com also [http://barry.wordpress.com/ blogs] about his work. Click on the 'servers' and 'scaling' tags.
 
 == Caching == 
 
@@ -17,13 +17,13 @@ For multiple server setups, the memory-based [http://wordpress.org/extend/plugin
 
 == Databases == 
 
-Use MySQL. It is very popular and well supported. The use of other database software will mean fewer people able to help with support problems. wordpress.com uses MySQL and it scales well. 
+Use MySQL. It is very popular and the only supported database. wordpress.com uses MySQL and it scales well. 
 
-For multiple database setups, use [http://wordpress.org/extend/plugins/hyperdb/ HyperDB]. It is developed and used by Automattic for wordpress.com and allows for considerable scaling. 
+For multiple database setups, use [http://wordpress.org/extend/plugins/hyperdb/ HyperDB]. It is developed and used by Automattic for wordpress.com and allows for considerable scaling. A 44 min presentation on HyperDB and other aspects of large scale WPMU setups, can be viewed [http://2007.wordcamp.org/schedule/hyperdb-and-performance/ here]. The slides from the presentation can be seen [http://www.slideshare.net/bazza/high-performance-wordpress here]. 
 
 == Web server == 
 
-Apache is the most well supported web server for use with WordPress. (WordPress is predominantly, though not exclusively, a LAMP application). It is sufficient for moderate-sized installations, but is not considered to run as quickly as Nginx. wordpress.com runs Nginx for serving pages and Apache for serving media. 
+Apache is the most well supported web server for use with WordPress. (WordPress is predominantly, though not exclusively, a LAMP application). It is sufficient for moderate-sized installations, but is not considered to run as quickly as Nginx or L. wordpress.com runs Nginx for serving pages and Apache for serving media. 
 
 
 == digress.it ==
