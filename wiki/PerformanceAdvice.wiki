@@ -2,7 +2,7 @@
 
 A useful overview of how wordpress.com handles performance related issues, is given [http://maisonbisson.com/blog/post/13938/systems-wrangling-session-at-wordcamp-developer-day/ here].
 
-A useful [http://serverqa.wordpress.com/2009/05/31/ask-your-questions-here/ Q&A] was given by the lead SysAdmin for wordpress.com.
+A useful [http://serverqa.wordpress.com/2009/05/31/ask-your-questions-here/ Q&A] was recently given by Automattic staff for wordpress.com.
 
 == Caching == 
 
