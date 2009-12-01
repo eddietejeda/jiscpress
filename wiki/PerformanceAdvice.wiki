@@ -4,6 +4,8 @@ A useful overview of how wordpress.com handles performance related issues, is gi
 
 A useful [http://serverqa.wordpress.com/2009/05/31/ask-your-questions-here/ Q&A] was recently given by Automattic staff for wordpress.com.
 
+Barry, a SysAdmin for wordpress.com also [http://barry.wordpress.com/ blogs] about his work.
+
 == Caching == 
 
 Both memory-based and file-based caching methods are supported by WordPress. 
