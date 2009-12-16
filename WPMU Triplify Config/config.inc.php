@@ -136,7 +136,7 @@ $triplify['queries']=array(
 	'post'=>array(
 		/* posts and pages */
 		"SELECT id, post_author 'sioc:has_creator', post_date 'dcterms:created', post_title 'dc:title', post_content 'sioc:content', post_modified 'dcterms:modified'
-		FROM {$table_prefix}posts WHERE post_status='publish' AND post_password=NULL",
+		FROM {$table_prefix}posts WHERE post_status='publish' AND post_password=\"NULL\"",
 		/* excerpts for posts/pages where they are set */
 		"SELECT id, post_excerpt 'dcterms:abstract'
 		FROM {$table_prefix}posts WHERE post_status='publish' AND LENGTH(post_excerpt) > 0",
