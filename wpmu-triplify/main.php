@@ -30,7 +30,6 @@ Copyright 2009 University of Lincoln <jwinn@lincoln.ac.uk>
 
 function triplify_init()
 {
-	//die("bob");
 	global $blog_id;
 	if(isset($_REQUEST['triplify']))
 	{
