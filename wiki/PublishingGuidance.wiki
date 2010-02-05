@@ -51,6 +51,8 @@ In summary, you can author and publish in the following ways, to suit your workf
 
 The Wordpress editor has an icon with the Microsoft Word icon on it. If you use that, to paste your text into the WordPress editor, your original formatting should be faithfully retained. You can also edit your original document once it's on JISCPress, adding multimedia, gadgets and widgets. If it is supported by WordPress, it is supported by JISCPress.
 
+Recent versions of both Word (2007+) and WordPress (2.8+) have improved compatibility. You should be able to simply copy from Word directly into the WordPress editor, without using the Microsoft Word icon.
+
 Whichever way you choose to author and publish your document, digress.it should discover standard formatting conventions and publish them accurately.  If you have created a highly stylised document in your Word Processor with unconventional layout, this will be lost, as will the original typography.  You can control the typography through adjustments to the digress.it stylesheet (if you are able to upload new stylesheets to the server).
 
 == Publishing your document ==
